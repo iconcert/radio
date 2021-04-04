@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'flash/style.css' %}">
+</head>
+<body>
+	<header>
+		<h3><a href="/">Радио</a></h3>
+		<h3><a href="/information/">Информация</a></h3>
+		<h3><a href="/menu/">Меню</a></h3>
+		<div id="okno">
+			Всплывающее окошко!<br>
+			<a href="#" class="close">Закрыть окно</a>
+        </div>
+     
+        <a href="#okno">Вызвать всплывающее окно</a>
+		<h3>Регистрация</h3>
+		<h3>Авторизация</h3>
+	</header>
+	<content>
+		<table>
+			<caption><h1>Список радиостанций</h1></caption>
+			<thead>
+			    <tr>
+			        <th>Название</th> <th>Описание</th> <th>Ссылка</th>
+			    </tr>
+			</thead>
+			{% for ll in lls %}
+			<tbody>
+			    <tr>
+			        <td>{{ ll.title }}</td> <td>{{ ll.content }}</td> <td><a href="http://{{ ll.URL }}">{{ ll.URL }}</a></td>
+			    </tr>
+			</tbody>
+			{% endfor %}
+		</table>		
+	</content>
+	<footer>
+		<h3><a href="/police/">Политика конфиденциальности</a></h3>
+		<h3><a href="/regulations/">Правила поведения на сайте</a></h3>
+		<h3><a href="/services/">Услуги</a></h3>
+		<h3><a href="/sitemap/">Карта сайта</a></h3>
+	</footer>
+</body>
+</html>
