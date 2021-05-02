@@ -5,7 +5,7 @@ from .models import List
 
 def index(request):
 	template = loader.get_template('flash/index.html')
-	lls = List.objects.order_by('-published')
+	lls = List.objects.order_by('title')
 	context = {'lls': lls}
 	return HttpResponse(template.render(context, request))
 
