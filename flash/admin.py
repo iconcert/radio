@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import List
-from .models import Services
+from .models import List, Services
 
 class ListAdmin(admin.ModelAdmin):
 	list_display = ('title', 'ganre', 'URL', 'published')
