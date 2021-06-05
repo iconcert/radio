@@ -10,7 +10,7 @@ header {
     display: flex;
     font-size: 24px;
     justify-content: space-around;
-    background-color: #8c8ca0;
+    background-color: #e6cbd9;
     height: auto;
     font-family: cursive;
 }
@@ -18,10 +18,11 @@ content {
     display: flex;
     flex-direction: column;
     height: 900px;
-    background-color: #88869e;
+    background-color: #f1e9ea;
     align-items: center;
 }
 table {
+    background-color: white;
 }
 th {
     font-size: 24px;
@@ -36,7 +37,7 @@ footer {
     display: flex;
     font-size: 24px;
     justify-content: space-around;
-    background-color: #8c8ca0;
+    background-color: #e6cbd9;
     height: auto;
     font-family: cursive;
 }

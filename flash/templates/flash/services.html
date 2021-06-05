@@ -10,5 +10,22 @@
 	<header>
 		<h3><a href="/">Радио</a></h3>
 	</header>
+	<content>
+		<table>
+			<caption><h1>Услуги</h1></caption>
+			<thead>
+			    <tr>
+			        <th>Название</th> <th>Тип</th> <th>Описание</th> <th>Цена</th>
+			    </tr>
+			</thead>
+			{% for ll in lls %}
+			<tbody>
+			    <tr>
+			        <td>{{ ll.title }}</td> <td>{{ ll.typeservices }}</td> <td>{{ ll.content }}</td> <td>{{ ll.price }}</td>
+			    </tr>
+			</tbody>
+			{% endfor %}
+		</table>		
+	</content>
 </body>
 </html>

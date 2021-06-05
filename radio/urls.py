@@ -21,11 +21,13 @@ from flash import views
 urlpatterns = [
     path('', views.index),
     path('home/', views.index),
-    path('menu/', views.menu),
     path('information/', views.information),
-    path('admin/', admin.site.urls),
+    path('menu/', views.menu),
+    path('registration/', views.registration),
+    path('autorization/', views.autorization),
     path('police/', views.police),
     path('regulations/', views.regulations),
     path('services/', views.services),
     path('sitemap/', views.sitemap),
+    path('admin/', admin.site.urls),
 ]

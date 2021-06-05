@@ -11,27 +11,8 @@
 		<h3><a href="/">Радио</a></h3>
 		<h3><a href="/information/">Информация</a></h3>
 		<h3><a href="/menu/">Меню</a></h3>
-		<!-- <form action="" class="logIn-form__logIn d-flex align-items-center space-between">
-			<h3>Войдите в аккаунт</h3>
-			<p class="logIn-form__description">Введите свою почту, по которой вы регестрировались и пароль для входа</p>
-			<input type="text" name="email" placeholder="Почта">
-			<input type="password" name="password" placeholder="Пароль">
-			<div class="logIn-form__remember d-flex align-items-center space-between">
-				<input type="checkbox" class="logIn-form__checkbox" id="logIn-form__checkbox">
-				<label for="logIn-form__checkbox" class="logIn-form__label">Запомнить пароль</label>
-				<span class="logIn-form__forgot">Забыли пароль?</span>
-			</div>
-			<button type="submit" class="logIn-form__button button">Войти</button>
-			<p class="logIn-form__or-continue">или продолжить через</p>
-			<div class="logIn-form__social-networks">
-				<button class="logIn-form__facebook"></button>
-				<button class="logIn-form__vk"></button>
-				<button class="logIn-form__instagram"></button>
-				<button class="logIn-form__pinterest"></button>
-			</div>
-		</form> -->
-		<h3>Регистрация</h3>
-		<h3>Авторизация</h3>
+		<h3><a href="/registration/">Регистрация</a></h3>
+		<h3><a href="/autorization/">Авторизация</a></h3>
 	</header>
 	<content>
 		<table>
@@ -44,7 +25,7 @@
 			{% for ll in lls %}
 			<tbody>
 			    <tr>
-			        <td>{{ ll.title }}</td> <td>{{ ll.content }}</td> <td><a href="http://{{ ll.URL }}" target="blank">{{ ll.URL }} </a></td>
+			        <td>{{ ll.title }}</td> <td>{{ ll.ganre }}</td> <td><a href="http://{{ ll.URL }}" target="blank">{{ ll.URL }} </a></td>
 			    </tr>
 			</tbody>
 			{% endfor %}
